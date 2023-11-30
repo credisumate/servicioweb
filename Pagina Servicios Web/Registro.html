@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilosPro.css">
+    <link rel="icon" href="logoV.png" type="image/x-icon">
+    <script src="Verificador.js"></script>
+    <title>R E G I S T R O</title>
+</head>
+<body>
+    <div class="cajaprincipal">
+        <div class="cajadetitulo">
+            <div class="text">
+                <p>Registrate</p> 
+            </div>
+            <div class="botonescontainer">
+                <a href="index.html">
+                    <button id="boton1">Inicio</button>
+                </a>
+                <a href="iniciar.html">
+                    <button id="boton2">Iniciar sesión</button>
+                </a>
+            </div>
+        </div>
+        <div class="cajadecajas">
+            <div>
+                <form id="registroForm" action="RegistarDatos.php" method="post" onsubmit="return validarFormulario()">
+                    <label for="username">Nombre:</label>
+                    <input type="text" name="nombreU" required>
+                    <label for="CoU">Correo:</label>
+                    <input type="email" name="correoU" required>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" name="password" id="password" required>
+                    <label for="password1">Confirma contraseña:</label>
+                    <input type="password" name="passwordC" id="passwordC" required> 
+                    <span id="errorMensaje" class="error"></span>
+                    <br>
+                    <button type="submit">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; TechNext Solutions 2023</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.cajaprincipal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cajadetitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    background-image: url(https://www.alamy.com/aggregator-api/download?url=https://c8.alamy.com/comp/2DCMHJ3/cute-vet-seamless-pattern-hand-drawn-background-of-pet-faces-and-veterinary-equipment-2DCMHJ3.jpg);
+}
+
+.text {
+    color: #ee0979;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 1);
+    font-family: Segoe UI;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+button {
+    background-color: #ee0979;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-family: Segoe UI;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(185, 19, 99);
+}
+
+.botonescontainer {
+    display: flex; 
+    gap: 10px; 
+        }
+
+#boton1, #boton2 {
+    padding: 10%;
+    width: 100px;
+    text-align: center; 
+}
+
+.cajadecajas {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #000000;
+}
+
+form {
+    width: 90%;
+    max-width: 300px;
+}
+
+.center-inputs {
+    text-align: center;
+}
+
+label {
+    font-family: Segoe UI;
+    font-size: 15px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border-color: #ee0979;
+    box-shadow: 0 0 5px rgb(185, 19, 99);
+}
+
+footer {
+    margin-top: auto; 
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: Segoe UI;
+}
+
+.error {
+    color: red;
+    font-family: 'Segoe UI';
+}
+
+@media only screen and (min-width: 600px) {
+    .cajadetitulo {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
